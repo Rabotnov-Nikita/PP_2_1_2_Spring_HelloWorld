@@ -11,7 +11,7 @@ public class App {
         HelloWorld bean2 = applicationContext.getBean("helloworld", HelloWorld.class);
         Cat catBeanOne = applicationContext.getBean("cat", Cat.class);
         Cat catBeanTwo = applicationContext.getBean("cat", Cat.class);
-        System.out.println(bean == bean2);
-        System.out.println(catBeanOne == catBeanTwo);
+        System.out.println("Проверка пары HelloWorld: " + (bean == bean2));
+        System.out.println("Проверка пары Cat: " + (catBeanOne == catBeanTwo));
     }
 }
